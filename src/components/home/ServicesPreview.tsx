@@ -69,7 +69,7 @@ export default function ServicesPreview() {
                       {service.subtitle}
                     </span>
                   </div>
-                  <h3 className="font-serif text-white text-2xl mb-3">
+                  <h3 className="font-serif text-white text-3xl md:text-5xl mb-3">
                     {service.title}
                   </h3>
                   <p className="text-white/55 text-sm leading-relaxed line-clamp-3">

@@ -40,13 +40,13 @@ export default function ContactPage() {
               <p className="text-[var(--gold)] text-[10px] tracking-[0.35em] uppercase mb-4">
                 Visit the Venue
               </p>
-              <h2 className="font-serif text-foreground text-3xl sm:text-4xl">
+              <h2 className="font-serif text-foreground text-3xl md:text-5xl">
                 Let&apos;s Plan Your Celebration
               </h2>
               <p className="text-foreground/60 mt-4 leading-relaxed">
                 Ready to see the hall or check a date? Fill out the form and our
-                team will reach out to discuss your event, guest count, and
-                how we can host you.
+                team will reach out to discuss your event, guest count, and how
+                we can host you.
               </p>
             </div>
 
@@ -159,7 +159,7 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-card border border-border p-8 md:p-10">
-            <h3 className="font-serif text-foreground text-2xl mb-2">
+            <h3 className="font-serif text-foreground text-3xl md:text-5xl mb-2">
               Send an Inquiry
             </h3>
             <p className="text-foreground/50 text-sm mb-8">
