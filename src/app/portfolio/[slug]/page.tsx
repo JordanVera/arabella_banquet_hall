@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const description = project.photographer
-    ? `${project.title} floral design by Thistle & Grace Design. Photography by ${project.photographer}.`
-    : `${project.title} floral design by Thistle & Grace Design in Houston, TX.`;
+    ? `${project.title} at ${COMPANY.name}. Photography by ${project.photographer}.`
+    : `${project.title} hosted at ${COMPANY.name} in Houston, TX.`;
 
   return {
     title: `${project.title} | Portfolio | ${COMPANY.name}`,
@@ -76,7 +76,7 @@ export default async function ProjectPage({ params }: Props) {
             className="mb-6 inline-flex items-center gap-2 text-[10px] tracking-[0.28em] text-white/55 uppercase transition-colors hover:text-[var(--gold)]"
           >
             <ArrowLeft size={12} />
-            All Projects
+            All Events
           </Link>
           <p className="mb-4 text-[10px] tracking-[0.4em] text-[var(--gold)] uppercase">
             {project.category}

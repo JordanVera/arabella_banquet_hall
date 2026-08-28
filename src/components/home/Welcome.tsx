@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ABOUT_CONTENT, COMPANY, GOOGLE_RATING } from '@/lib/data';
+import { ABOUT_CONTENT, GOOGLE_RATING } from '@/lib/data';
 
 const anim = (delay: number) => ({
   initial: { opacity: 0, y: 32 },
@@ -31,8 +31,10 @@ export default function Welcome() {
               {...anim(0.1)}
               className="font-serif text-4xl sm:text-5xl leading-tight text-foreground"
             >
-              Unforgettable concepts.{' '}
-              <em className="italic text-[var(--gold)]">Lasting impressions.</em>
+              An elegant space.{' '}
+              <em className="italic text-[var(--gold)]">
+                Unforgettable celebrations.
+              </em>
             </motion.h2>
 
             <motion.p
@@ -56,7 +58,7 @@ export default function Welcome() {
               {[
                 { number: `${GOOGLE_RATING.rating}★`, label: 'Google Rating' },
                 { number: `${GOOGLE_RATING.reviewCount}`, label: 'Reviews' },
-                { number: 'Houston', label: 'Local Florist' },
+                { number: 'Houston', label: 'Banquet Hall' },
               ].map((stat) => (
                 <div key={stat.label}>
                   <p className="font-serif text-2xl text-[var(--gold)]">
@@ -74,7 +76,7 @@ export default function Welcome() {
                 href="/about"
                 className="inline-flex items-center text-[var(--gold)] text-xs tracking-[0.2em] uppercase hover:underline underline-offset-4"
               >
-                Meet Arabella Banquet Hall
+                About the Venue
               </Link>
             </motion.div>
           </div>

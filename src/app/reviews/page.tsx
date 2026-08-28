@@ -8,12 +8,12 @@ import { FEATURED_REVIEWS, GOOGLE_REVIEWS } from '@/lib/reviews';
 export const metadata: Metadata = {
   title: `Reviews | ${COMPANY.name}`,
   description:
-    'Read Google reviews for Arabella Banquet Hall — a 4.9★ Houston venue and art floral studio trusted by couples and event planners across Greater Houston.',
+    'Read Google reviews for Arabella Banquet Hall — a 4.9★ Houston banquet hall trusted by couples, families, and event planners across Greater Houston.',
 };
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Florist',
+  '@type': 'EventVenue',
   name: COMPANY.name,
   telephone: COMPANY.phone,
   address: {
@@ -21,7 +21,7 @@ const jsonLd = {
     streetAddress: COMPANY.address,
     addressLocality: 'Houston',
     addressRegion: 'TX',
-    postalCode: '77092',
+    postalCode: COMPANY.postalCode,
   },
   aggregateRating: {
     '@type': 'AggregateRating',
@@ -71,8 +71,8 @@ export default function ReviewsPage() {
 
       <section className="relative h-64 overflow-hidden sm:h-80">
         <Image
-          src="https://thistleandgracedesign.com/wp-content/uploads/2025/10/6-scaled.jpg"
-          alt="Floral design by Arabella Banquet Hall"
+          src="/portfolio/weddings/01.jpg"
+          alt="Guests celebrating at Arabella Banquet Hall"
           fill
           priority
           className="object-cover object-center"
@@ -81,7 +81,7 @@ export default function ReviewsPage() {
         <div className="absolute inset-0 bg-black/65" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 pt-20 text-center">
           <p className="mb-4 text-[10px] tracking-[0.4em] text-[var(--gold)] uppercase">
-            Client Love
+            Guest Love
           </p>
           <h1 className="font-serif text-5xl text-white sm:text-6xl">Reviews</h1>
         </div>
@@ -100,8 +100,8 @@ export default function ReviewsPage() {
           </div>
           <p className="leading-relaxed text-foreground/60">
             Couples, families, and event planners across Greater Houston trust
-            Steve and the Thistle &amp; Grace team to bring their celebrations
-            to life. Here is what clients are saying on Google.
+            Arabella Banquet Hall to host their celebrations. Here is what
+            guests are saying on Google.
           </p>
           <a
             href={GOOGLE_REVIEWS.url}
@@ -141,7 +141,7 @@ export default function ReviewsPage() {
             Share Your Experience
           </p>
           <h2 className="mt-4 font-serif text-3xl text-white sm:text-4xl">
-            Worked with us recently?
+            Hosted with us recently?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/60">
             We would love to hear about your celebration. Leave a review on

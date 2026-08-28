@@ -22,8 +22,8 @@ export default function InstagramCta() {
             {COMPANY.instagramHandle}
           </h2>
           <p className="text-white/55 text-sm max-w-md leading-relaxed">
-            See our newest floral installations, wedding designs, and event
-            styling — updated regularly on Instagram.
+            See weddings, quinceañeras, and celebrations hosted in our Houston
+            hall — updated regularly on Instagram.
           </p>
           <a
             href={COMPANY.instagram}

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Phone, MapPin, Mail } from 'lucide-react';
-import { COMPANY, NAV_LINKS } from '@/lib/data';
+import { COMPANY, NAV_LINKS, SERVICE_OFFERINGS } from '@/lib/data';
 import Logo from '@/components/layout/Logo';
 import SocialLinks from '@/components/layout/SocialLinks';
 
@@ -12,8 +12,8 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <Logo variant="light" size="lg" />
             <p className="max-w-xs text-sm leading-relaxed">
-              {COMPANY.tagline} — Houston floral design for weddings, events,
-              and celebrations.
+              {COMPANY.tagline} — a two-level Houston banquet hall for
+              weddings, events, and private celebrations.
             </p>
             <SocialLinks />
           </div>
@@ -39,20 +39,11 @@ export default function Footer() {
               Services
             </h4>
             <ul className="flex flex-col gap-2">
-              <li className="text-sm">
-                Two-level banquet hall for weddings and celebrations
-              </li>
-              <li className="text-sm">
-                In-house florals and decor coordination
-              </li>
-              <li className="text-sm">
-                Wedding reception and plated/buffet dinner service
-              </li>
-              <li className="text-sm">Full bar and cocktail service</li>
-              <li className="text-sm">Dance floor and DJ staging</li>
-              <li className="text-sm">
-                Table settings, linens, and linen service
-              </li>
+              {SERVICE_OFFERINGS.slice(0, 6).map((offering) => (
+                <li key={offering} className="text-sm">
+                  {offering}
+                </li>
+              ))}
             </ul>
           </div>
           <div className="lg:col-span-3 md:col-span-2">

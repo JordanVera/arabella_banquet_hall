@@ -3,12 +3,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import PortfolioGrid from '@/components/portfolio/PortfolioGrid';
 import { COMPANY } from '@/lib/data';
-import { PORTFOLIO_PROJECTS } from '@/lib/portfolio';
 
 export const metadata: Metadata = {
   title: `Portfolio | ${COMPANY.name}`,
   description:
-    'Browse wedding florals, gala installations, and event design work by Thistle & Grace Design in Houston, TX.',
+    'Browse weddings, quinceañeras, and private celebrations hosted at Arabella Banquet Hall in Houston, TX.',
 };
 
 export default function PortfolioPage() {
@@ -16,8 +15,8 @@ export default function PortfolioPage() {
     <>
       <section className="relative h-64 overflow-hidden sm:h-80">
         <Image
-          src="https://thistleandgracedesign.com/wp-content/uploads/2025/10/5-scaled.jpg"
-          alt="Portfolio — Thistle & Grace Design"
+          src="/portfolio/events/01.jpg"
+          alt="Celebrations hosted at Arabella Banquet Hall"
           fill
           priority
           className="object-cover object-center"
@@ -37,8 +36,8 @@ export default function PortfolioPage() {
       <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="mx-auto mb-14 max-w-2xl text-center">
           <p className="leading-relaxed text-foreground/60">
-            {PORTFOLIO_PROJECTS.length} weddings, styleshoots, and celebrations
-            designed by {COMPANY.founder} and the T&G Design team. Follow{' '}
+            A look at weddings, receptions, and private celebrations hosted at
+            our Houston banquet hall. Follow{' '}
             <a
               href={COMPANY.instagram}
               target="_blank"
@@ -58,7 +57,7 @@ export default function PortfolioPage() {
             href="/contact"
             className="inline-flex bg-[var(--gold)] px-8 py-3.5 text-xs font-medium tracking-[0.2em] text-black uppercase transition-colors duration-200 hover:bg-[var(--gold-hover)]"
           >
-            Start Your Project
+            Plan Your Event
           </Link>
         </div>
       </section>

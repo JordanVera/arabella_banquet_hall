@@ -1,4 +1,4 @@
-export type PortfolioCategory = 'Weddings' | 'Styleshoots' | 'Events';
+export type PortfolioCategory = 'Weddings' | 'Details' | 'Events';
 
 export type PortfolioProject = {
   slug: string;
@@ -12,7 +12,7 @@ export type PortfolioProject = {
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
     slug: 'weddings',
-    title: 'Wedding Florals',
+    title: 'Weddings',
     photographer: '',
     category: 'Weddings' as const,
     cover: '/portfolio/weddings/01.jpg',
@@ -20,7 +20,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       '/portfolio/weddings/01.jpg',
       '/portfolio/weddings/02.jpg',
       '/portfolio/weddings/03.jpg',
-      '/portfolio/weddings/04.jpg'
+      '/portfolio/weddings/04.jpg',
     ],
   },
   {
@@ -32,35 +32,41 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     images: [
       '/portfolio/events/01.jpg',
       '/portfolio/events/02.jpg',
-      '/portfolio/events/03.jpg'
+      '/portfolio/events/03.jpg',
     ],
   },
   {
     slug: 'details',
-    title: 'Floral Details',
+    title: 'The Space',
     photographer: '',
-    category: 'Styleshoots' as const,
+    category: 'Details' as const,
     cover: '/portfolio/details/01.jpg',
-    images: [
-      '/portfolio/details/01.jpg',
-      '/portfolio/details/02.jpg'
-    ],
+    images: ['/portfolio/details/01.jpg', '/portfolio/details/02.jpg'],
   },
 ];
 
 export const PORTFOLIO_CATEGORIES: Array<'All' | PortfolioCategory> = [
   'All',
   'Events',
-  'Styleshoots',
-  'Weddings'
+  'Details',
+  'Weddings',
 ];
 
 export const FEATURED_PROJECTS = PORTFOLIO_PROJECTS.slice(0, 6);
 
 export const HERO_IMAGES = [
-  { src: '/portfolio/weddings/01.jpg', alt: 'Arabella Banquet Hall — Wedding Florals' },
-  { src: '/portfolio/events/01.jpg', alt: 'Arabella Banquet Hall — Events & Celebrations' },
-  { src: '/portfolio/details/01.jpg', alt: 'Arabella Banquet Hall — Floral Details' },
+  {
+    src: '/portfolio/weddings/01.jpg',
+    alt: 'Wedding reception at Arabella Banquet Hall in Houston',
+  },
+  {
+    src: '/portfolio/events/01.jpg',
+    alt: 'Private celebration hosted at Arabella Banquet Hall',
+  },
+  {
+    src: '/portfolio/details/01.jpg',
+    alt: 'Interior details of Arabella Banquet Hall',
+  },
 ] as const;
 
 export function getProject(slug: string) {

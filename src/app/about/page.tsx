@@ -6,7 +6,7 @@ import { ABOUT_CONTENT, COMPANY } from '@/lib/data';
 export const metadata: Metadata = {
   title: `About | ${COMPANY.name}`,
   description:
-    'Meet Arabella Banquet Hall, art floral designer and founder of Arabella Banquet Hall Design — 13+ years crafting unforgettable floral concepts in Houston.',
+    'Arabella Banquet Hall is a two-level Houston event venue on Jensen Drive — hosting weddings, quinceañeras, corporate functions, and private celebrations.',
 };
 
 export default function AboutPage() {
@@ -14,8 +14,8 @@ export default function AboutPage() {
     <>
       <section className="relative h-64 sm:h-80 overflow-hidden">
         <Image
-          src="https://thistleandgracedesign.com/wp-content/uploads/2025/10/6-scaled.jpg"
-          alt="About Arabella Banquet Hall Design"
+          src="/portfolio/weddings/01.jpg"
+          alt="Inside Arabella Banquet Hall in Houston"
           fill
           priority
           className="object-cover object-center"
@@ -34,13 +34,13 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto flex flex-col gap-6">
           <div>
             <p className="text-[var(--gold)] text-[10px] tracking-[0.35em] uppercase mb-4">
-              Principal Designer
+              Our Venue
             </p>
             <h2 className="font-serif text-foreground text-4xl sm:text-5xl leading-tight">
-              {COMPANY.founder}
+              {COMPANY.name}
             </h2>
             <p className="text-[var(--gold)] text-sm tracking-[0.15em] uppercase mt-2">
-              {COMPANY.founderTitle}
+              Houston Banquet Hall
             </p>
           </div>
 
@@ -69,7 +69,7 @@ export default function AboutPage() {
               rel="noopener noreferrer"
               className="inline-flex justify-center px-8 py-3.5 border border-border text-foreground text-xs tracking-[0.2em] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-200"
             >
-              Follow Me
+              Follow Us
             </a>
           </div>
         </div>
@@ -78,14 +78,14 @@ export default function AboutPage() {
       <section className="py-20 px-6 lg:px-8 bg-[#0e0c08]">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[var(--gold)] text-[10px] tracking-[0.35em] uppercase mb-4">
-            Visit Our Showroom
+            Tour the Hall
           </p>
           <h2 className="font-serif text-white text-3xl sm:text-4xl mb-6">
-            Experience T&G Design in Person
+            See the Space in Person
           </h2>
           <p className="text-white/60 leading-relaxed mb-8">
-            Stop by our Houston studio to explore floral concepts, rental
-            pieces, and design inspiration for your upcoming celebration.
+            Schedule a visit to walk the two-level hall, preview the bars and
+            catering kitchen, and talk through your celebration with our team.
           </p>
           <p className="text-white/80 text-sm">
             {COMPANY.address}

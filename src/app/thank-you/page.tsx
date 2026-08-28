@@ -5,7 +5,7 @@ import { COMPANY } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: `Thank You | ${COMPANY.name}`,
-  description: 'Thank you for contacting Thistle & Grace Design.',
+  description: `Thank you for contacting ${COMPANY.name}.`,
   robots: { index: false, follow: false },
 };
 

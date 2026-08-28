@@ -19,15 +19,15 @@ const emylis = localFont({
 });
 
 export const metadata: Metadata = {
-  title: `Arabella Banquet Hall — Houston Floral Design`,
+  title: `${COMPANY.name} — Houston Event Venue`,
   description:
-    "Arabella Banquet Hall is a full-service Houston venue and floral studio in Houston, TX — specializing in wedding florals, event rentals, and corporate celebrations.",
+    "Arabella Banquet Hall is a two-level banquet hall on Jensen Drive in Houston, TX — hosting weddings, quinceañeras, corporate events, and private celebrations.",
   keywords:
-    "floral design Houston, wedding florist Houston, event rentals Houston, Thistle and Grace Design, Arabella Banquet Hall florist",
+    "Arabella Banquet Hall, Houston banquet hall, Houston wedding venue, quinceañera venue Houston, event venue Houston, Jensen Drive banquet hall",
   openGraph: {
-    title: `Arabella Banquet Hall — Houston Floral Design`,
+    title: `${COMPANY.name} — Houston Event Venue`,
     description:
-      "Art floral design and event rentals for weddings, galas, and celebrations across Greater Houston.",
+      "A modern two-level banquet hall for weddings, galas, and celebrations across Greater Houston.",
     type: "website",
   },
 };

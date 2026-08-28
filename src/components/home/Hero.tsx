@@ -134,7 +134,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mb-6 text-xs tracking-[0.4em] text-[var(--gold)] uppercase"
         >
-          Art Floral Design · Houston
+          Event Venue · Houston
         </motion.p>
 
         <motion.h1
@@ -143,7 +143,8 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 0.35 }}
           className="max-w-4xl font-serif text-5xl leading-[1.05] tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
         >
-          Where Design Meets <em className="italic text-[var(--gold)]">Beauty</em>
+          Where Celebrations Come to{' '}
+          <em className="italic text-[var(--gold)]">Life</em>
         </motion.h1>
 
         <motion.p
@@ -152,9 +153,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.55 }}
           className="mt-6 max-w-xl text-base leading-relaxed text-white/75 sm:text-lg"
         >
-          {COMPANY.name} transforms weddings, galas, and celebrations into
-          unforgettable masterpieces — with artful florals and curated event
-          rentals.
+          {COMPANY.name} is a two-level Houston venue for weddings,
+          quinceañeras, corporate events, and private celebrations — with
+          elegant spaces, full-service hosting, and a welcoming team.
         </motion.p>
 
         <motion.div

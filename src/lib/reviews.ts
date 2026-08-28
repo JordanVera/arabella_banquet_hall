@@ -7,7 +7,7 @@ export type Review = {
 
 export const GOOGLE_REVIEWS = {
   rating: 4.9,
-  count: 250,
+  count: 84,
   url: 'https://www.google.com/maps/search/Arabella+Banquet+Hall,+9230+Jensen+Dr,+Houston,+TX+77093/reviews',
 };
 

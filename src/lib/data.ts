@@ -7,14 +7,15 @@ export const COMPANY = {
   email: 'Arabellabanquet@gmail.com',
   address: '9230 Jensen Dr',
   city: 'Houston, TX 77093',
-  founder: '',
-  founderTitle: 'Owner & Designer',
+  postalCode: '77093',
   instagram: 'https://www.instagram.com/arabella.banquethall/',
   instagramHandle: '@arabella.banquethall',
   facebook: 'https://www.facebook.com/arabella.banquethall/',
   pinterest: '',
   website: '',
   yearsExperience: 10,
+  mapsEmbedUrl:
+    'https://maps.google.com/maps?q=9230+Jensen+Dr,+Houston,+TX+77093&z=16&output=embed',
 };
 
 export const NAV_LINKS = [
@@ -27,41 +28,45 @@ export const NAV_LINKS = [
 
 export const SERVICES = [
   {
-    id: 'two-level-banquet-hall-for-weddings-and-celebrations',
-    title: 'Two-level banquet hall for weddings and ',
-    subtitle: 'Houston Florals',
-    description: 'Two-level banquet hall for weddings and celebrations',
+    id: 'weddings-and-receptions',
+    title: 'Weddings & Receptions',
+    subtitle: 'Two-Level Hall',
+    description:
+      'Celebrate your wedding in a modern two-level banquet hall with elegant decor, a spacious layout, and room for dinner, dancing, and every guest on your list.',
     image: '/portfolio/weddings/01.jpg',
     icon: 'heart',
   },
   {
-    id: 'in-house-florals-and-decor-coordination',
-    title: 'In-house florals and decor coordination',
-    subtitle: 'Houston Florals',
-    description: 'In-house florals and decor coordination',
+    id: 'private-celebrations',
+    title: 'Private Celebrations',
+    subtitle: 'Quinceañeras & Parties',
+    description:
+      'Host quinceañeras, birthdays, anniversaries, and family gatherings in a beautifully maintained space with in-house decor, linens, and dedicated event staff.',
     image: '/portfolio/events/01.jpg',
-    icon: 'briefcase',
+    icon: 'sparkles',
   },
   {
-    id: 'wedding-reception-and-plated-buffet-dinner-service',
-    title: 'Wedding reception and plated/buffet dinn',
-    subtitle: 'Houston Florals',
-    description: 'Wedding reception and plated/buffet dinner service',
+    id: 'corporate-and-galas',
+    title: 'Corporate Events & Galas',
+    subtitle: 'Meetings & Dinners',
+    description:
+      'From plated dinners to cocktail receptions, our hall, catering kitchen, and two bars are ready for corporate functions, fundraisers, and formal galas.',
     image: '/portfolio/details/01.jpg',
-    icon: 'sparkles',
+    icon: 'briefcase',
   },
 ];
 
 export const ABOUT_CONTENT = {
-  intro: 'Arabella Banquet Hall is a modern two-level event venue on Jensen Drive offering sophisticated spaces for weddings, quinceañeras, corporate functions, and private celebrations. Guests praise the elegant decor, spacious layout with two bars, catering kitchen, professional security, and welcoming owner-operated service.',
-  body: 'Arabella Banquet Hall is a modern two-level event venue on Jensen Drive offering sophisticated spaces for weddings, quinceañeras, corporate functions, and private celebrations. Guests praise the elegant decor, spacious layout with two bars, catering kitchen, professional security, and welcoming owner-operated service.',
-  bio: 'Arabella Banquet Hall is a modern two-level event venue on Jensen Drive offering sophisticated spaces for weddings, quinceañeras, corporate functions, and private celebrations. Guests praise the elegant decor, spacious layout with two bars, catering kitchen, professional security, and welcoming owner-operated service.',
+  intro:
+    'Arabella Banquet Hall is a modern two-level event venue on Jensen Drive in Houston. We host weddings, quinceañeras, corporate functions, and private celebrations in a space designed to feel elegant, spacious, and welcoming from the moment guests arrive.',
+  body: 'The hall features a thoughtful layout with two bars, a catering kitchen, a dance floor with DJ staging, and professional on-site security. Table settings, linens, and day-of staff are part of how we host — so you can focus on your guests, not the logistics.',
+  bio: 'We are an owner-operated venue known for warm service, a beautifully maintained space, and celebrations that photograph as well as they feel. Couples, families, and planners across Greater Houston choose Arabella for events that need both polish and heart.',
 };
 
 export const SERVICE_OFFERINGS = [
   'Two-level banquet hall for weddings and celebrations',
-  'In-house florals and decor coordination',
-  'Wedding reception and plated/buffet dinner service',
+  'In-house decor, lighting, and table styling',
+  'Wedding reception and plated or buffet dinner service',
   'Full bar and cocktail service',
   'Dance floor and DJ staging',
   'Table settings, linens, and linen service',
@@ -71,6 +76,6 @@ export const SERVICE_OFFERINGS = [
 
 export const GOOGLE_RATING = {
   rating: 4.9,
-  reviewCount: 250,
+  reviewCount: 84,
   url: 'https://www.google.com/maps/search/Arabella+Banquet+Hall,+9230+Jensen+Dr,+Houston,+TX+77093/reviews',
 };

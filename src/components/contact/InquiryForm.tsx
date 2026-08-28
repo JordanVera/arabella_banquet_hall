@@ -16,7 +16,7 @@ const schema = z.object({
   name: z.string().min(2, "Name is required"),
   email: z.string().email("Valid email required"),
   phone: z.string().optional(),
-  eventType: z.enum(["wedding", "corporate", "social", "other", ""], {
+  eventType: z.enum(["wedding", "quinceanera", "corporate", "social", "other", ""], {
     required_error: "Please select an event type",
   }),
   eventDate: z.string().optional(),
@@ -93,6 +93,7 @@ export default function InquiryForm() {
           >
             <option value="">— Select —</option>
             <option value="wedding">Wedding</option>
+            <option value="quinceanera">Quinceañera</option>
             <option value="corporate">Corporate Event / Gala</option>
             <option value="social">Social Celebration</option>
             <option value="other">Other</option>
@@ -114,7 +115,7 @@ export default function InquiryForm() {
         <Label htmlFor="message">Tell Us About Your Event *</Label>
         <Textarea
           id="message"
-          placeholder="Share details about your event — venue, style, floral preferences..."
+          placeholder="Share details about your event — guest count, preferred date, and how you envision the celebration..."
           rows={5}
           {...register("message")}
           className={errors.message ? "border-destructive" : ""}
