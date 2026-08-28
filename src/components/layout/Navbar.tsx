@@ -37,7 +37,7 @@ export default function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-3 sm:pt-4">
       <nav
         className={cn(
-          'mx-auto flex items-center justify-between rounded-full border px-3 py-2 transition-all duration-300 sm:px-4',
+          'mx-auto flex items-center justify-between rounded-full border px-3 py-2.5 transition-all duration-300 sm:px-5 sm:py-3',
           scrolled
             ? 'max-w-5xl border-white/10 bg-[#0e0c08]/80 shadow-lg shadow-black/20 backdrop-blur-xl'
             : 'max-w-6xl border-transparent bg-transparent',
@@ -78,7 +78,7 @@ export default function Navbar() {
 
         <div className="flex items-center gap-1.5">
           <SocialLinks
-            className="mr-4 md:mr-2"
+            className="mr-4 hidden sm:flex md:mr-2"
             iconSize={18}
             linkClassName="text-white/70 hover:text-[var(--gold)]"
           />

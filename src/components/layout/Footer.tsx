@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 lg:px-8">
         <div className="mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
           <div className="flex flex-col gap-4">
-            <Logo variant="light" />
+            <Logo variant="light" size="lg" />
             <p className="max-w-xs text-sm leading-relaxed">
               {COMPANY.tagline} — Houston floral design for weddings, events,
               and celebrations.
