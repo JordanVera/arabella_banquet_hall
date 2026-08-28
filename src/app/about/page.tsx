@@ -31,60 +31,46 @@ export default function AboutPage() {
       </section>
 
       <section className="py-20 px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-3 gap-16 items-center">
-          {/* Image: 1/3 column on large screens */}
-          <div className="relative aspect-square w-48 sm:w-64 mx-auto lg:mx-0 overflow-hidden lg:col-span-1">
-            <Image
-              src="/about-steve.png"
-              alt={`${COMPANY.founder}, ${COMPANY.founderTitle}`}
-              fill
-              className="object-cover object-top"
-              sizes="(max-width: 1024px) 48vw, 256px"
-            />
+        <div className="max-w-3xl mx-auto flex flex-col gap-6">
+          <div>
+            <p className="text-[var(--gold)] text-[10px] tracking-[0.35em] uppercase mb-4">
+              Principal Designer
+            </p>
+            <h2 className="font-serif text-foreground text-4xl sm:text-5xl leading-tight">
+              {COMPANY.founder}
+            </h2>
+            <p className="text-[var(--gold)] text-sm tracking-[0.15em] uppercase mt-2">
+              {COMPANY.founderTitle}
+            </p>
           </div>
 
-          {/* Content: 2/3 columns on large screens */}
-          <div className="flex flex-col gap-6 lg:col-span-2">
-            <div>
-              <p className="text-[var(--gold)] text-[10px] tracking-[0.35em] uppercase mb-4">
-                Principal Designer
-              </p>
-              <h2 className="font-serif text-foreground text-4xl sm:text-5xl leading-tight">
-                {COMPANY.founder}
-              </h2>
-              <p className="text-[var(--gold)] text-sm tracking-[0.15em] uppercase mt-2">
-                {COMPANY.founderTitle}
-              </p>
-            </div>
+          <p className="text-foreground/65 leading-relaxed text-base sm:text-lg">
+            {ABOUT_CONTENT.intro}
+          </p>
 
-            <p className="text-foreground/65 leading-relaxed text-base sm:text-lg">
-              {ABOUT_CONTENT.intro}
-            </p>
+          <p className="text-foreground/65 leading-relaxed text-base sm:text-lg">
+            {ABOUT_CONTENT.body}
+          </p>
 
-            <p className="text-foreground/65 leading-relaxed text-base sm:text-lg">
-              {ABOUT_CONTENT.body}
-            </p>
+          <p className="text-foreground/65 leading-relaxed text-base sm:text-lg">
+            {ABOUT_CONTENT.bio}
+          </p>
 
-            <p className="text-foreground/65 leading-relaxed text-base sm:text-lg">
-              {ABOUT_CONTENT.bio}
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link
-                href="/contact"
-                className="inline-flex justify-center px-8 py-3.5 bg-[var(--gold)] text-black text-xs tracking-[0.2em] uppercase font-medium hover:bg-[var(--gold-hover)] transition-colors duration-200"
-              >
-                Get in Touch
-              </Link>
-              <a
-                href={COMPANY.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex justify-center px-8 py-3.5 border border-border text-foreground text-xs tracking-[0.2em] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-200"
-              >
-                Follow Me
-              </a>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <Link
+              href="/contact"
+              className="inline-flex justify-center px-8 py-3.5 bg-[var(--gold)] text-black text-xs tracking-[0.2em] uppercase font-medium hover:bg-[var(--gold-hover)] transition-colors duration-200"
+            >
+              Get in Touch
+            </Link>
+            <a
+              href={COMPANY.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex justify-center px-8 py-3.5 border border-border text-foreground text-xs tracking-[0.2em] uppercase hover:border-[var(--gold)] hover:text-[var(--gold)] transition-all duration-200"
+            >
+              Follow Me
+            </a>
           </div>
         </div>
       </section>

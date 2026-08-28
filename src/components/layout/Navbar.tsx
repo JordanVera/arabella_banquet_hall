@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import { NAV_LINKS, COMPANY } from '@/lib/data';
 import { cn } from '@/lib/utils';
+import Logo from '@/components/layout/Logo';
 import SocialLinks from '@/components/layout/SocialLinks';
 
 export default function Navbar() {
@@ -43,16 +43,7 @@ export default function Navbar() {
             : 'max-w-6xl border-transparent bg-transparent',
         )}
       >
-        <Link href="/" className="flex shrink-0 items-center gap-2 pl-1">
-          <Image
-            src="/logo-light.png"
-            alt={COMPANY.name}
-            width={140}
-            height={86}
-            className="h-10 w-auto sm:h-12"
-            priority
-          />
-        </Link>
+        <Logo variant="light" className="pl-1" />
 
         <div className="hidden items-center gap-1 lg:flex">
           {NAV_LINKS.map((link) => {
